@@ -9,20 +9,21 @@ import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
 @Entity
-@Table (name="employees")
+@Table(name = "employees")
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
 public class Employee {
-@Id
-@GeneratedValue (strategy=GenerationType.IDENTITY)
-@Column (name="emp_id")
-private int empId;
-@Column (name="emp_name")
-private String empName;
-@Column (name = "designation")
-private String designation;
-@Column (name="emp_salary")
-private double empSalary;
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "emp_id")
+	private int empId;
+	@Column(name = "emp_name")
+	private String empName;
+	@Column(name = "designation")
+	private String designation;
+	@Column(name = "emp_salary")
+	private double empSalary;
 }
